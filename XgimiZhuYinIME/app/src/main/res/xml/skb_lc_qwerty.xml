@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 全键盘_26小写字母 -->
+<Keyboard
+    bg_res="@drawable/main_bg"
+    key_bg_res="@drawable/key_bg_rectangle"
+    key_height="@dimen/h_60"
+    key_left_padding="@dimen/w_10"
+    key_select_res="@drawable/white_light_10"
+    key_text_color="#b8bbbf"
+    key_text_size="@dimen/w_30"
+    key_top_padding="@dimen/h_10"
+    key_width="@dimen/w_60"
+    left_right_move="true"
+    qwerty="true"
+    qwerty_uppercase="false"
+    start_pos_x="@dimen/w_420"
+    start_pos_y="@dimen/h_20"
+    top_bottom_move="false" >
+
+    <!-- 第一行 -->
+    <row>
+
+        <!-- 数字 -->
+        <keys
+            key_right_padding="@dimen/w_70"
+            labels="1|2|3"
+            splitter="|" />
+
+        <!-- 字母键盘 -->
+        <keys
+            labels="a|b|c|d|e|f|g"
+            splitter="|" />
+
+        <!-- 小写转换按键 -->
+        <key
+            key_code="@string/keycode_uppercase"
+            key_icon="@drawable/lowercase" />
+
+        <!-- 返回-退出输入法 -->
+        <key
+            key_code="@string/keycode_back"
+            key_icon="@drawable/quit_skb" />
+    </row>
+
+    <!-- 第二行 -->
+    <row>
+
+        <!-- 数字 -->
+        <keys
+            key_right_padding="@dimen/w_70"
+            labels="4|5|6"
+            splitter="|" />
+
+        <!-- 字母 -->
+        <keys
+            labels="h|i|j|k|l|m|n"
+            splitter="|" />
+
+        <!-- 英文逗号 -->
+        <key
+            key_icon="@drawable/dou_hao_e"
+            key_label="," />
+
+        <!-- 删除 -->
+        <key
+            key_code="@string/keycode_del"
+            key_icon="@drawable/delete" />
+    </row>
+
+    <!-- 第三行 -->
+    <row>
+
+        <!-- 数字 -->
+        <keys
+            key_right_padding="@dimen/w_70"
+            labels="7|8|9"
+            splitter="|" />
+
+        <!-- 字母 -->
+        <keys
+            labels="o|p|q|r|s|t|u"
+            splitter="|" />
+
+        <!-- 英文句号 -->
+        <key
+            key_icon="@drawable/ju_hao_e"
+            key_label="." />
+
+        <!-- 回车 -->
+        <key
+            key_code="@string/keycode_center"
+            key_height="@dimen/h_130"
+            key_icon="@drawable/sym_keyboard_return"
+            key_text_size="@dimen/w_20" />
+    </row>
+
+    <!-- 第四行 -->
+    <row key_bottom_padding="@dimen/h_30" >
+
+        <!-- 注音键盘 -->
+        <key
+            key_code="@string/keycode_zhuyin_skb"
+            key_label="注音"
+            key_text_size="@dimen/w_20" />
+
+        <!-- 数字 -->
+        <key key_label="0" />
+
+        <!-- 切换到符号键盘 -->
+        <key
+            key_code="@string/keycode_sym123_skb"
+            key_label="123_!"
+            key_right_padding="@dimen/w_70"
+            key_text_size="@dimen/w_20" />
+
+        <!-- 字母 -->
+        <keys
+            labels="v|w|x|y|z"
+            splitter="|" />
+
+        <!-- 光标左移动 -->
+        <key
+            key_code="@string/keycode_left"
+            key_icon="@drawable/key_move_left" />
+
+        <!-- 光标右移动 -->
+        <key
+            key_code="@string/keycode_right"
+            key_icon="@drawable/key_move_right" />
+
+        <!-- 空格 -->
+        <key
+            key_code="@string/keycode_space"
+            key_icon="@drawable/sym_keyboard_space" />
+    </row>
+
+</Keyboard>

@@ -1,0 +1,88 @@
+<resources>
+
+    <string name="app_name">极米注音输入法</string>
+
+    <!--  -->
+    <string name="keycode_del">67</string>
+ <!-- 删除 -->
+    <string name="keycode_back">4</string>
+ <!-- 返回 -->
+    <string name="keycode_center">66</string>
+ <!-- 回车 -->
+    <string name="keycode_space">62</string>
+ <!-- 空格 -->
+
+    <string name="keycode_left">21</string>
+ <!-- 左边 -->
+    <string name="keycode_right">22</string>
+ <!-- 右边 -->
+
+    <string name="keycode_zhuyin_skb">399</string>
+ <!-- 注音键盘 -->
+    <string name="keycode_abc_skb">400</string>
+ <!-- abc 123 -->
+    <string name="keycode_sym123_skb">401</string>
+ <!-- 符号键盘 -->
+
+    <string name="keycode_lowercase">402</string>
+ <!-- 小写 -->
+    <string name="keycode_uppercase">403</string>
+ <!-- 大写 -->
+
+    <string name="keycode_sym_all_angle">404</string>
+ <!-- 全角 -->
+    <string name="keycode_sym_half_angle">405</string>
+ <!-- 半角 -->
+
+
+    <!-- 注音输入法的字母-->
+    <string name="wrod_zhuyin_separators">ㄅㄉˊˇㄓˋ˙ㄚㄞㄢㄆㄊㄍㄐㄔㄗㄧㄛㄟㄣㄇㄋㄎㄑㄕㄘㄨㄜㄠㄤㄈㄌㄏㄒㄖㄙㄩㄝㄡㄥㄦ</string>
+    <string name="db_create_error">"無法建立資料庫"</string>
+    <string name="ime_settings_name">注音输入法设置</string>
+    <!-- Option to play back sound on keypress in soft keyboard -->
+    <string name="sound_on">setting_sound_key</string>
+    <string name="sound_on_keypress">按鍵聲音</string>
+    <string name="setting_enabled">開啟</string>
+    <string name="setting_disabled">關閉</string>
+    <string name="vibrate_on">setting_vibrate_key</string>
+    <string name="vibrate_on_keypress">按鍵震動</string>
+    <string name="default_im">setting_default_im</string>
+    <string name="default_im_keypress">預設輸入法</string>
+    <string name="default_im_chinese">中文</string>
+    <string name="default_im_english">英文</string>
+    <string name="candidate_cnt">Search_Records</string>
+    <string name="candidate_cnt_keypress">搜尋字詞筆數</string>
+
+    <string-array name="candidate_cnt_list">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+    </string-array>
+	
+    <string-array name="candidate_cnt_list_value">
+		<item>10</item>
+		<item>20</item>
+		<item>30</item>
+		<item>40</item>
+		<item>50</item>
+		<item>60</item>
+		<item>70</item>
+		<item>80</item>
+		<item>90</item>
+		<item>100</item>
+	</string-array>
+	
+     <!-- 键盘 回车字符串 -->
+    <string name="enter_go">Go</string><!-- 去往 -->
+    <string name="enter_send">Send</string><!-- 发送 -->
+    <string name="enter_next">Next</string><!-- 下一个 -->
+    <string name="enter_text">Enter</string><!-- 完成 -->
+    
+</resources>

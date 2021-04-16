@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_60">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_60"
+        android:background="@color/candidate_bg_color"
+        android:orientation="horizontal" >
+
+        <!-- 左边 -->
+
+        <LinearLayout
+            android:id="@+id/candidate_left_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/h_60"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/candidate_left"
+                android:layout_width="@dimen/w_50"
+                android:layout_height="@dimen/h_60"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="true"
+                android:src="@drawable/ic_suggest_strip_scroll_left_arrow" />
+
+            <ImageView
+                android:layout_width="@dimen/w_1"
+                android:layout_height="@dimen/h_60"
+                android:src="@drawable/keyboard_suggest_strip_divider" />
+        </LinearLayout>
+
+        <!-- 候选视图 -->
+
+        <com.xgimi.ime.view.CandidateView
+            android:id="@+id/candidateview"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_60"
+            android:layout_weight="1" />
+
+           <!-- 右边 -->
+
+        <LinearLayout
+            android:id="@+id/candidate_right_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/h_60"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/w_1"
+                android:layout_height="@dimen/h_60"
+                android:src="@drawable/keyboard_suggest_strip_divider" />
+
+            <ImageButton
+                android:id="@+id/candidate_right"
+                android:layout_width="@dimen/w_50"
+                android:layout_height="@dimen/h_60"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="true"
+                android:src="@drawable/ic_suggest_strip_scroll_right_arrow" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <!-- 分割线-->
+        <View
+            android:layout_gravity="bottom"
+            android:background="@color/candidate_split_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+
+    </FrameLayout>
+
+</merge>

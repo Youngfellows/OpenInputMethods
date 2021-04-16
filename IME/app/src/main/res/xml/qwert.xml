@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+/*
+    Changjie Chinese Input Method for Android
+    Copyright (C) 2012 LinkOmnia Ltd.
+
+    Author: Wan Leung Wong (wanleung@linkomnia.com)
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+-->
+
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:horizontalGap="10dip"
+    android:keyWidth="@dimen/key_height"
+    android:keyHeight="@dimen/key_height"
+    android:verticalGap="10dip">
+
+    <!-- 第一排 -->
+    <Row>
+        <Key
+            android:codes="-1"
+            android:isModifier="true"
+            android:isSticky="true"
+            android:keyEdgeFlags="left"
+            android:keyIcon="@drawable/key_shift" />
+        <Key
+            android:codes="113"
+            android:keyLabel="q" />
+        <Key
+            android:codes="119"
+            android:keyLabel="w" />
+        <Key
+            android:codes="101"
+            android:keyLabel="e" />
+        <Key
+            android:codes="114"
+            android:keyLabel="r" />
+        <Key
+            android:codes="116"
+            android:keyLabel="t" />
+        <Key
+            android:codes="121"
+            android:keyLabel="y" />
+        <Key
+            android:codes="117"
+            android:keyLabel="u" />
+        <Key
+            android:codes="105"
+            android:keyLabel="i" />
+        <Key
+            android:codes="111"
+            android:keyLabel="o" />
+        <Key
+            android:codes="112"
+            android:keyLabel="p" />
+        <Key
+            android:codes="-5"
+            android:isRepeatable="true"
+            android:keyIcon="@drawable/delete" />
+        <Key
+            android:codes="-3"
+            android:keyEdgeFlags="right"
+            android:keyIcon="@drawable/quit_skb" />
+    </Row>
+
+    <!-- 第二排 -->
+    <Row>
+        <Key
+            android:codes="-300"
+            android:keyEdgeFlags="left"
+            android:keyIcon="@drawable/key_lang" />
+        <Key
+            android:codes="97"
+            android:keyLabel="a" />
+        <Key
+            android:codes="115"
+            android:keyLabel="s" />
+        <Key
+            android:codes="100"
+            android:keyLabel="d" />
+        <Key
+            android:codes="102"
+            android:keyLabel="f" />
+        <Key
+            android:codes="103"
+            android:keyLabel="g" />
+        <Key
+            android:codes="104"
+            android:keyLabel="h" />
+        <Key
+            android:codes="106"
+            android:keyLabel="j" />
+        <Key
+            android:codes="107"
+            android:keyLabel="k" />
+        <Key
+            android:codes="108"
+            android:keyLabel="l" />
+        <Key
+            android:keyBackground="@drawable/button"
+            android:keyLabel="www."
+           />
+        <Key android:keyLabel="/" />
+        <Key
+            android:codes="10"
+            android:keyHeight="20.5%p"
+            android:keyEdgeFlags="right"
+            android:keyIcon="@drawable/key_enter" />
+    </Row>
+
+    <!-- 第三排 -->
+    <Row>
+        <Key
+            android:codes="-2"
+            android:keyLabel="123" />
+        <Key
+            android:codes="122"
+            android:keyLabel="z" />
+        <Key
+            android:codes="120"
+            android:keyLabel="x" />
+        <Key
+            android:codes="99"
+            android:keyLabel="c" />
+        <Key
+            android:codes="118"
+            android:keyLabel="v" />
+        <Key
+            android:codes="32"
+            android:isRepeatable="true"
+            android:keyWidth="11.5%p"
+            android:keyIcon="@drawable/key_space" />
+        <Key
+            android:codes="98"
+            android:keyLabel="b" />
+        <Key
+            android:codes="110"
+            android:keyLabel="n" />
+        <Key
+            android:codes="109"
+            android:keyLabel="m" />
+        <Key
+            android:codes="2550"
+            android:isRepeatable="true"
+            android:keyIcon="@drawable/key_move_left" />
+        <Key
+            android:codes="2551"
+            android:keyIcon="@drawable/key_move_right" />
+    </Row>
+
+</Keyboard>
+
+    <!--
+
+    keyLabel 按键显示的内容
+    keyIcon 按键显示的图标内容
+    keyWidth 按键的宽度
+    keyHeight 按键的高度
+    horizontalGap 代表按键前的间隙水平方向上的
+    isRepeatable 按键是可重复的，如果长按键可以触发重复按键事件则为true，else为false
+
+    isSticky 按键是否是sticky的，就像shift 键 具有两种状态
+    isModifier 按键是不是功能键
+    keyOutputText 指定按键输出的内容是字符串
+    keyEdgeFlags 指定按键的对齐指令，取值为left或者right
+
+    -->

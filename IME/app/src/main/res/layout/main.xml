@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+/*
+    Changjie Chinese Input Method for Android
+    Copyright (C) 2012 LinkOmnia Ltd.
+
+    Author: Wan Leung Wong (wanleung@linkomnia.com)
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+-->
+<com.xgimi.ime.changjie.IMEKeyboardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keyboard"
+    android:paddingTop="10dp"
+    android:paddingBottom="15dp"
+    android:paddingLeft="80dp"
+    android:paddingRight="30dp"
+    android:keyBackground="@drawable/button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:shadowRadius="0"
+    android:keyTextSize="@dimen/keychar_size"
+    android:labelTextSize="@dimen/keychar_size" />
+
+<!--
+android:background="@drawable/mainbackground"
+android:keyBackground="@drawable/button"
+
+属性	描述
+android:keyBackground	键的背景图
+android:keyPreviewLayout	击键盘上的某个键时，短暂弹出的提示布局文件
+android:keyPreviewOffset	击键盘上的某个键时，短暂弹出布局的垂直偏移量
+android:keyTextColor	按键中的keyLabel的颜色
+android:keyTextSize	按键中的keyLabel的大小
+android:labelTextSize	如果有图片时，按键中的keyLabel的大小
+android:popupLayout	弹出键盘的布局文件
+android:verticalCorrection	补偿触摸Y坐标的偏移量，用于偏移校正
+
+android:shadowRadius="0.0" android:shadowColor="背景色"
+这两个属性可以解决键盘上显示的文字糊的问题。
+
+-->

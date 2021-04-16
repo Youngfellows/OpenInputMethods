@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 注音键盘-zhuyin 2016.08.31 -->
+<Keyboard
+    bg_res="@drawable/main_bg"
+    key_bg_res="@drawable/key_bg_rectangle"
+    key_height="@dimen/h_60"
+    key_left_padding="@dimen/w_10"
+    key_select_res="@drawable/white_light_10"
+    key_text_color="#b8bbbf"
+    key_text_size="@dimen/w_30"
+    key_top_padding="@dimen/h_10"
+    key_width="@dimen/w_60"
+    left_right_move="true"
+    qwerty="true"
+    qwerty_uppercase="false"
+    start_pos_x="@dimen/w_420"
+    start_pos_y="@dimen/h_20"
+    top_bottom_move="false" >
+
+    <!-- 第一行 -->
+    <row>
+        
+        <!-- 数字 -->
+        <keys
+            key_right_padding="@dimen/w_70"
+            labels="1|2|3"
+            splitter="|" />
+		
+        <!-- 注音字母 codes很重要,用于注音词库返回，不要随便修改-->
+        <keys
+            codes="12549|12553|714|711|12563|715|729|12570|12574|12578"
+            labels="ㄅ|ㄉ|ˊ|ˇ|ㄓ|ˋ|˙|ㄚ|ㄞ|ㄢ"
+            splitter="|" />
+        <!-- 删除 -->
+        <key
+            key_code="@string/keycode_del"
+            key_icon="@drawable/delete" />
+        <!-- 返回-退出输入法 -->
+        <key
+            key_code="@string/keycode_back"
+            key_icon="@drawable/quit_skb" />
+    </row>
+
+    <!-- 第二行 -->
+    <row>
+        <!-- 数字 -->
+        <keys
+            key_right_padding="@dimen/w_70"
+            labels="4|5|6"
+            splitter="|" />
+		
+        <!-- 注音字母 -->
+        <keys
+            codes="12550|12554|12557|12560|12564|12567|12583|12571|12575|12579"
+            labels="ㄆ|ㄊ|ㄍ|ㄐ|ㄔ|ㄗ|ㄧ|ㄛ|ㄟ|ㄣ"
+            splitter="|" />
+
+        <!-- 中文逗号 -->
+        <key key_label="，" />
+        <key
+            key_code="@string/keycode_left"
+            key_icon="@drawable/key_move_left" />
+        <key
+            key_code="@string/keycode_right"
+            key_icon="@drawable/key_move_right" />
+    </row>
+
+    <!-- 第三行 -->
+    <row>
+
+        <!-- 数字 -->
+        <keys
+            key_right_padding="@dimen/w_70"
+            labels="7|8|9"
+            splitter="|" />
+
+        <!-- 注音字母 -->
+        <keys
+            codes="12551|12555|12558|12561|12565|12568|12584|12572|12576|12580"
+            labels="ㄇ|ㄋ|ㄎ|ㄑ|ㄕ|ㄘ|ㄨ|ㄜ|ㄠ|ㄤ"
+            splitter="|" />
+
+        <!-- 中文句号 -->
+        <key key_label="。" />
+
+        <!-- 空格 -->
+        <key
+            key_code="@string/keycode_space"
+            key_icon="@drawable/sym_keyboard_space" />
+
+        <!-- 回车 -->
+        <key
+            key_code="@string/keycode_center"
+            key_height="@dimen/h_130"
+            key_icon="@drawable/sym_keyboard_return"
+            key_text_size="@dimen/w_20" />
+    </row>
+
+    <!-- 第四行 -->
+    <row key_bottom_padding="@dimen/h_30" >
+        
+        <!-- abc123键盘 -->
+        <key
+            key_code="@string/keycode_abc_skb"
+            key_label="abc"
+            key_text_size="@dimen/w_20" />
+        
+        <!-- 数字 -->
+        <key key_label="0" />
+		
+          <!-- 切换到符号键盘 -->
+        <key
+            key_code="@string/keycode_sym123_skb"
+            key_label="123_!"
+            key_right_padding="@dimen/w_70"
+            key_text_size="@dimen/w_20" />
+        
+        <!-- 注音 -->
+        <keys
+            codes="12552|12556|12559|12562|12566|12569|12585|12573|12577|12581|12582"
+            labels="ㄈ|ㄌ|ㄏ|ㄒ|ㄖ|ㄙ|ㄩ|ㄝ|ㄡ|ㄥ|ㄦ"
+            splitter="|" />
+
+        <!-- 中文问号 -->
+        <key key_label="？" />
+    </row>
+
+</Keyboard>
