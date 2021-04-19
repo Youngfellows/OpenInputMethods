@@ -1,13 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 20
+    compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "com.open.inputmethod"
         minSdkVersion 15
-        targetSdkVersion 20
+        //noinspection ExpiredTargetSdkVersion
+        targetSdkVersion 23
     }
 
     buildTypes {
@@ -19,5 +20,6 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:20.0.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:support-v4:20.0.0'
 }
