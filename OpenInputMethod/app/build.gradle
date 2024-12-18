@@ -11,10 +11,36 @@ android {
         targetSdkVersion 23
     }
 
+    signingConfigs {
+        aosp {
+            storeFile file('.\\keystore\\aosp-releasekey.jks')
+            storePassword 'android'
+            keyPassword 'android'
+            keyAlias = 'AOSP Release'
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+
+        platform {
+            keyAlias 'android'
+            keyPassword 'android'
+            storeFile file('.\\keystore\\platform.jks')
+            storePassword 'android'
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            //signingConfig signingConfigs.aosp
+            signingConfig signingConfigs.platform
+        }
+        debug {
+            //signingConfig signingConfigs.aosp
+            signingConfig signingConfigs.platform
         }
     }
 }
